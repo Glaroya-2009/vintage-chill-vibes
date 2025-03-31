@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,6 +53,16 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				stoner: {
+					brown: "#8B5A2B",
+					green: "#4A6741",
+					orange: "#D2691E",
+					yellow: "#DAA520",
+					beige: "#F5DEB3",
+					cream: "#FFFDD0",
+					purple: "#6A0DAD",
+					red: "#A52A2A"
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -70,25 +81,41 @@ export default {
 			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' }
 				},
 				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
-					},
-					to: {
-						height: '0'
-					}
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' }
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' }
+				},
+				'wiggle': {
+					'0%, 100%': { transform: 'rotate(-3deg)' },
+					'50%': { transform: 'rotate(3deg)' }
+				},
+				'pulse-slow': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.7' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 6s ease-in-out infinite',
+				'wiggle': 'wiggle 6s ease-in-out infinite',
+				'pulse-slow': 'pulse-slow 4s ease-in-out infinite'
+			},
+			fontFamily: {
+				'bebas': ['Bebas Neue', 'cursive'],
+				'yellowtail': ['Yellowtail', 'cursive'],
+				'groovy': ['Permanent Marker', 'cursive']
+			},
+			backgroundImage: {
+				'paper-texture': "url('https://www.transparenttextures.com/patterns/old-map.png')",
+				'noise-texture': "url('https://www.transparenttextures.com/patterns/noise-pattern-with-subtle-cross-lines.png')"
 			}
 		}
 	},
