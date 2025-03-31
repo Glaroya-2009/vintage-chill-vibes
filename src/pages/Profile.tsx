@@ -14,9 +14,12 @@ const Profile = () => {
           <div className="vintage-card mb-12 retro-shadow">
             <div className="flex flex-col md:flex-row gap-8">
               <div className="md:w-1/3 flex justify-center">
-                <div className="w-48 h-48 rounded-full bg-gradient-to-br from-stoner-green to-stoner-brown flex items-center justify-center retro-shadow">
-                  <span className="font-bebas text-5xl text-stoner-cream">GL</span>
-                </div>
+                {/* Using the uploaded image instead of the placeholder */}
+                <img 
+                  src="/lovable-uploads/f5c8f627-28e0-43f6-8ca5-4e6c7d93dc5c.png" 
+                  alt="Gabriel Laroya" 
+                  className="w-48 h-48 rounded-full object-cover border-4 border-stoner-brown retro-shadow"
+                />
               </div>
               
               <div className="md:w-2/3">

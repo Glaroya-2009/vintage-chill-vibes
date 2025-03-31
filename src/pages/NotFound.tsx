@@ -13,6 +13,7 @@ const NotFound = () => {
     );
   }, [location.pathname]);
 
+  // This now renders an HTML string that mimics the React JSX structure
   return (
     <Layout>
       <div className="page-container flex items-center justify-center">

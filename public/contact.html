@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabriel Laroya | Contact</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="min-h-screen flex flex-col">
+    <header>
+      <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+        <h1 class="font-bebas text-4xl md:text-5xl text-stoner-brown mb-4 md:mb-0">
+          Gabriel Laroya
+        </h1>
+        <nav>
+          <a href="index.html" class="vintage-button">Home</a>
+          <a href="profile.html" class="vintage-button">Profile</a>
+          <a href="hobbies.html" class="vintage-button">Hobbies</a>
+          <a href="about.html" class="vintage-button">About</a>
+          <a href="contact.html" class="active vintage-button">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="flex-grow container mx-auto">
+      <div class="page-container">
+        <div class="max-w-4xl mx-auto">
+          <h1 class="text-5xl md:text-6xl font-yellowtail text-center mb-12 text-stoner-brown">
+            Get in Touch
+          </h1>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="vintage-card retro-shadow h-full">
+              <h2 class="text-4xl font-bebas text-stoner-brown mb-4">My Details</h2>
+              <div class="h-1 w-full bg-gradient-to-r mb-6"></div>
+              
+              <div class="space-y-6">
+                <div class="flex flex-col">
+                  <span class="text-xl font-bebas text-stoner-green">Email</span>
+                  <a href="mailto:Soferhandsome@.com" class="text-stoner-brown hover:text-stoner-orange">
+                    Soferhandsome@.com
+                  </a>
+                </div>
+                
+                <div class="flex flex-col">
+                  <span class="text-xl font-bebas text-stoner-green">Phone</span>
+                  <a href="tel:09673779191" class="text-stoner-brown hover:text-stoner-orange">
+                    09673779191
+                  </a>
+                </div>
+                
+                <div class="flex flex-col">
+                  <span class="text-xl font-bebas text-stoner-green">Location</span>
+                  <span class="text-stoner-brown">Sa bahay nyo</span>
+                </div>
+                
+                <div class="mt-8 p-6 bg-stoner-green/20 rounded-md border-2 border-stoner-brown">
+                  <p class="text-center font-groovy text-stoner-brown">
+                    "Drop me a line, and let's vibe together!"
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="vintage-card retro-shadow">
+              <h2 class="text-4xl font-bebas text-stoner-brown mb-4">Send a Message</h2>
+              <div class="h-1 w-full bg-gradient-to-r mb-6"></div>
+              
+              <form id="contactForm" class="space-y-6">
+                <div>
+                  <label for="name" class="block text-xl font-bebas text-stoner-green mb-2">
+                    Your Name
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="vintage-input"
+                    required
+                  >
+                </div>
+                
+                <div>
+                  <label for="email" class="block text-xl font-bebas text-stoner-green mb-2">
+                    Your Email
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="vintage-input"
+                    required
+                  >
+                </div>
+                
+                <div>
+                  <label for="message" class="block text-xl font-bebas text-stoner-green mb-2">
+                    Your Message
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    class="vintage-input"
+                    required
+                  ></textarea>
+                </div>
+                
+                <button type="submit" class="vintage-button w-full bg-stoner-brown hover:bg-stoner-orange">
+                  Send Vibes
+                </button>
+              </form>
+              
+              <script>
+                document.getElementById('contactForm').addEventListener('submit', function(e) {
+                  e.preventDefault();
+                  alert('Far out, man! Your message has been sent to the cosmos. Gabriel will catch it soon!');
+                  this.reset();
+                });
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2024 Gabriel Laroya | Vintage Stoner Aesthetic</p>
+    </footer>
+  </div>
+</body>
+</html>
